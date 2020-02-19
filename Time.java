@@ -13,8 +13,12 @@ int seconds = kb.nextInt();
   by making the maximal amount of seconds, minutes and hours BY 60 */
 
   // Taking the time output to another level by adding an hoursTime variable
+  // 1hr = 60 min * 60 sec = 3600 sec
+  // SO 1 hr / 3600 sec
 int hoursTime = seconds / 3600;
+  // Minute = 1 hr % 3600 / 60 sec (which is 1 min)
 int minutesTime = seconds % 3600 / 60;
+  // Second = Second % 60 sec
 int secondsTime = seconds % 60;
 
 
@@ -22,7 +26,7 @@ int secondsTime = seconds % 60;
 
 
 // Output
-System.out.print("The format of " + seconds + " seconds in hour:minute:second is\n" + hoursTime + ":" + minutesTime + ":" + secondsTime);
+System.out.print("The format of " + seconds + " seconds in hour:minute:second is:\n" + hoursTime + ":" + minutesTime + ":" + secondsTime);
 
 
 }
