@@ -15,7 +15,8 @@ public class AverageCelcius
         System.out.println("What was the temperature in celcius the third day?");
         double temp3 = kb.nextInt();
 
-        // Apply the formula
+        // Apply the formula of an average (n = sum of terms / number of terms) which
+        // in this case is : average = (temp1 + temp2 + temp+3)  / 3
         double averageCelcius = (temp1 + temp2 + temp3) / 3;
 
         // Output
